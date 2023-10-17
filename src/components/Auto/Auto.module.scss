@@ -1,0 +1,45 @@
+.auto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-image: var(--gradientLight);
+  padding: 20px 10px;
+}
+
+.autoContainer {
+  max-width: 1440px;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--colorWhite);
+  border-radius: 20px;
+}
+
+@media (min-width: 480px) {
+  .autoContainer {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .auto {
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .autoContainer {
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+}

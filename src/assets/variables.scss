@@ -1,0 +1,11 @@
+:root {
+  --colorWhite: #ffffff;
+  --colorLightGrey: #abb6ba;
+  --colorGrey: #888888;
+  --colorOrange: #f87326;
+  --colorRed: #f22e2e;
+  --colorDeepGrey: #191919;
+  --colorBlack: #070707;
+  --gradientLight: linear-gradient(90deg, var(--colorLightGrey), var(--colorWhite));
+  --gradientDark: linear-gradient(90deg, var(--colorBlack), var(--colorDeepGrey));
+}

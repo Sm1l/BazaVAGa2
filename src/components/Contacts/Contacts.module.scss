@@ -1,0 +1,145 @@
+.contacts {
+  width: 100%;
+  min-height: calc(100dvh - 65px - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-image: var(--gradientDark);
+  padding: 20px 10px;
+  color: var(--colorWhite);
+  scroll-margin-top: 80px;
+}
+
+.contactsContainer {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+.watsapp {
+}
+
+.imgContainer,
+.imgContainerActive,
+.imgContainerTime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.imgContainerTime {
+  position: relative;
+}
+
+.imgW {
+  width: 36px;
+  height: 36px;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.contOne,
+.contTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  // padding: 20px 0px;
+}
+
+.contOne {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--colorRed);
+    opacity: 0.6;
+    z-index: 1;
+  }
+}
+
+.itemContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mapContainer {
+  width: 100%;
+  min-height: 100%;
+  min-height: 50dvh;
+  overflow: hidden;
+  border: none;
+  border-radius: 25px;
+}
+
+@media (min-width: 960px) {
+  .contacts {
+    min-height: calc(100dvh - 65px);
+    gap: 40px;
+    padding: 40px;
+    scroll-margin-top: 0;
+  }
+
+  .contactsContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  .mapContainer {
+    min-height: calc(100dvh - 100%);
+  }
+
+  .cont {
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .contOne,
+  .contTwo {
+    gap: 10px;
+    padding: 20px 0px;
+  }
+
+  .imgContainerActive {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--colorRed);
+      opacity: 0;
+      transition: opacity 300ms ease-out;
+    }
+    &:hover::after {
+      opacity: 1;
+      transition: opacity 300ms ease-out;
+    }
+  }
+}

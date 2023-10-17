@@ -28,6 +28,7 @@ const Slider: React.FC<SliderProps> = () => {
       // console.log("swiper init");
       const swiper = new Swiper(swiperRef.current, {
         slidesPerView: 1.3,
+        spaceBetween: 10,
         speed: 600,
         navigation: {
           nextEl: nextButtonRef.current,
@@ -40,11 +41,11 @@ const Slider: React.FC<SliderProps> = () => {
             return `<span class="${className}"></span>`;
           },
         },
-        // autoplay: {
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        //   pauseOnMouseEnter: true,
-        // },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
         breakpoints: {
           640: {
             slidesPerView: 2.3,

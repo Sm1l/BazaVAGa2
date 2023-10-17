@@ -79,6 +79,10 @@
     z-index: 1;
   }
 }
+.contTwo {
+  padding-top: 10px;
+  margin-left: -88px;
+}
 
 .itemContainer {
   display: flex;
@@ -121,6 +125,10 @@
   .contTwo {
     gap: 10px;
     padding: 20px 0px;
+  }
+
+  .contTwo {
+    margin-left: 0px;
   }
 
   .imgContainerActive {

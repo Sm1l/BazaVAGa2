@@ -13,7 +13,9 @@
   max-width: 1440px;
   display: grid;
   gap: 10px;
-  grid-template-rows: repeat(4, 1fr);
+  // grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .logoItem {
@@ -24,10 +26,15 @@
   border-radius: 20px;
 }
 
+.img {
+  max-width: 150px;
+  max-height: 100px;
+}
+
 @media (min-width: 480px) {
-  .autoContainer {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+  .img {
+    max-width: 236px;
+    max-height: 150px;
   }
 }
 

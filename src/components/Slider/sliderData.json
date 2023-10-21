@@ -61,12 +61,5 @@
       "title":"Обслуживание тормозной системы",
       "correction":"",
       "price":"500"
-    },
-    {  
-      "name": "tyres",
-      "image": "src/assets/images/slider/tyres.webp",
-      "title":"Шиномонтаж",
-      "correction":"",
-      "price":"2 500"
     }
  ]

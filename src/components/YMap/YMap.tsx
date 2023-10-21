@@ -1,6 +1,5 @@
 import React from "react";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
-// import { YMaps, Map, Placemark } from "react-yandex-maps";
 
 import styles from "./YMap.module.scss";
 import iconLocation from "../../assets/images/contacts/address.svg";
@@ -25,11 +24,16 @@ const YMap: React.FC<YMapProps> = ({ lat, lng }) => {
           <Placemark
             key={1}
             geometry={[lat, lng]}
+            modules={["geoObject.addon.balloon"]}
             options={{
               iconLayout: "default#image",
-              iconImageSize: [40, 50],
+              iconImageSize: [45, 60],
               iconImageHref: iconLocation,
-              // draggable: true,
+            }}
+            properties={{
+              // balloonContentBody: "BazaVAGa",
+              balloonContent: `<div class="balloon"><h1>BazaVAGa</h1><p>Диагностика, обслуживание,</br> 
+              ремонт автомобилей концерна VAG</p></div>`,
             }}
           />
         </Map>

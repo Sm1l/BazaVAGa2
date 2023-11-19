@@ -3,12 +3,16 @@
   min-height: 100dvh;
   display: flex;
   justify-content: center;
-  background: url("/src/assets/images/home/home-mobile.jpg") no-repeat right / cover;
+  background-color: var(--colorBlack);
+  background-image: url("/src/assets/images/home/home-mobile.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 960px) {
   .home {
-    background: url("/src/assets/images/home/home.jpg") no-repeat right / cover;
+    background-image: url("/src/assets/images/home/home.jpg");
   }
 }
 

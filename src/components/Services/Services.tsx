@@ -1,14 +1,13 @@
 import React from "react";
-
-import styles from "./Services.module.scss";
-import { Title } from "../Title";
 import { Slider } from "../Slider";
+import { Title } from "../Title";
+import styles from "./Services.module.scss";
 
 interface ServicesProps {}
 
 const Services: React.FC<ServicesProps> = () => {
   return (
-    <div className={styles.services} id="services">
+    <section className={styles.services} id="services">
       <div className={styles.servicesContainer}>
         <div className={styles.infoContainer}>
           <Title text="Услуги" />
@@ -16,7 +15,7 @@ const Services: React.FC<ServicesProps> = () => {
         </div>
         <Slider />
       </div>
-    </div>
+    </section>
   );
 };
 

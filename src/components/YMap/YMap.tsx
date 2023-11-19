@@ -1,8 +1,8 @@
+import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
 import React from "react";
-import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 
-import styles from "./YMap.module.scss";
 import iconLocation from "../../assets/images/contacts/address.svg";
+import styles from "./YMap.module.scss";
 
 interface YMapProps {
   lat: number;
@@ -33,7 +33,7 @@ const YMap: React.FC<YMapProps> = ({ lat, lng }) => {
             properties={{
               // balloonContentBody: "BazaVAGa",
               balloonContent: `<div class="balloon"><h1>BazaVAGa</h1><p>Диагностика, обслуживание,</br> 
-              ремонт автомобилей концерна VAG</p></div>`,
+              ремонт автомобилей концерна VAG.</p></div>`,
             }}
           />
         </Map>

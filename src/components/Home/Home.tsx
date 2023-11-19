@@ -6,7 +6,7 @@ interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
   return (
-    <div className={styles.home} id="home">
+    <section className={styles.home} id="home">
       <div className={styles.homeContainer}>
         <h2 className={styles.text}>Диагностика, обслуживание, ремонт автомобилей концерна VAG</h2>
         <div>
@@ -14,7 +14,7 @@ const Home: React.FC<HomeProps> = () => {
           <span className={styles.span2}>Для вашего автомобиля!</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,18 +1,18 @@
 import React from "react";
 
-import styles from "./Auto.module.scss";
 import { Title } from "../Title";
+import styles from "./Auto.module.scss";
 
-import iconVW from "../../assets/images/advantages/vw.png";
-import iconSkoda from "../../assets/images/advantages/skoda.png";
-import iconSeat from "../../assets/images/advantages/seat.png";
-import iconAudi from "../../assets/images/advantages/audi.png";
+import iconAudi from "../../assets/images/advantages/audi.webp";
+import iconSeat from "../../assets/images/advantages/seat.webp";
+import iconSkoda from "../../assets/images/advantages/skoda.webp";
+import iconVW from "../../assets/images/advantages/vw.webp";
 
 interface AutoProps {}
 
 const Auto: React.FC<AutoProps> = () => {
   return (
-    <div className={styles.auto}>
+    <section className={styles.auto}>
       <Title text="Обслуживаем автомобили концерна VAG" />
       <div className={styles.autoContainer}>
         <div className={styles.logoItem}>
@@ -28,7 +28,7 @@ const Auto: React.FC<AutoProps> = () => {
           <img className={styles.img} src={iconAudi} alt="audi" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

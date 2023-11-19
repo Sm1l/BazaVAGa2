@@ -1,26 +1,28 @@
-import React from "react";
 import { motion } from "framer-motion";
+import React from "react";
 
-import styles from "./Contacts.module.scss";
-import { Title } from "../Title";
 import imgAddress from "../../assets/images/contacts/address.svg";
+import imgCall from "../../assets/images/contacts/call.svg";
 import imgTime from "../../assets/images/contacts/time.svg";
 import imgWhatsapp from "../../assets/images/contacts/whatsapp.svg";
-import imgCall from "../../assets/images/contacts/call.svg";
+
+import { Title } from "../Title";
 import { YMap } from "../YMap";
+
+import styles from "./Contacts.module.scss";
 
 interface ContactsProps {}
 
 const Contacts: React.FC<ContactsProps> = () => {
   return (
-    <div className={styles.contacts} id="contacts">
+    <section className={styles.contacts} id="contacts">
       <Title text="Контакты" />
       <div className={styles.contactsContainer}>
         <div className={styles.cont}>
           <div className={styles.contOne}>
             <div className={styles.itemContainer}>
               <img src={imgAddress} alt="address" className={styles.img} />
-              <p className={styles.imgContainer}>г. Москва, Рабочая улица, 84с4</p>
+              <p className={styles.imgContainer}>г. Москва, 2-й Грайвороновский пр., 8, стр. 7</p>
             </div>
             <div className={styles.itemContainer}>
               <img src={imgTime} alt="time" className={styles.img} />
@@ -58,10 +60,11 @@ const Contacts: React.FC<ContactsProps> = () => {
           </div>
         </div>
         <div className={styles.mapContainer}>
-          <YMap lat={55.739417} lng={37.696238} />
+          {/* <YMap lat={55.722473} lng={37.731477} /> */}
+          <YMap lat={55.7225} lng={37.73144} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

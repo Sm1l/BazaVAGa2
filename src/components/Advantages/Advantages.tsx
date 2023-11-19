@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from "./Advantages.module.scss";
-import { Title } from "../Title";
 import { ListItem } from "../ListItem";
+import { Title } from "../Title";
+import styles from "./Advantages.module.scss";
 
 interface AdvantagesProps {}
 

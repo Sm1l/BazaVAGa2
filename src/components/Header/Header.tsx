@@ -1,22 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
-import styles from "./Header.module.scss";
 import { BurgerContainer } from "../BurgerContainer";
+import styles from "./Header.module.scss";
 
-interface HeaderProps {}
+interface HeaderProps {
+  appRef: React.RefObject<HTMLDivElement>;
+}
 
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC<HeaderProps> = ({ appRef }) => {
   const [width, setWidth] = useState(window.innerWidth);
-  const [appComponent, setAppComponent] = useState<Element | null>(null);
+  const [appComponent, setAppComponent] = useState<Element | null>(appRef.current);
 
   useEffect(() => {
-    setAppComponent(document.querySelector("#app"));
+    setAppComponent(appRef.current);
   }, []);
 
   useEffect(() => {
     const handleResizeWindow = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResizeWindow);
+
     return () => {
       window.removeEventListener("resize", handleResizeWindow);
     };

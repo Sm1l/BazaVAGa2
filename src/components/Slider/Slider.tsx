@@ -5,10 +5,12 @@ import "swiper/swiper-bundle.css";
 
 import styles from "./slider.module.scss";
 import sliderData from "./sliderData.json";
+import { TImageNames, sliderImage } from "./sliderImage";
+
 import "./swiper.scss";
 
 // type TSlider = {
-//   name: string;
+//   name: TImageNames;
 //   image: string;
 //   title: string;
 //   correction: string;
@@ -72,7 +74,7 @@ const Slider: React.FC<SliderProps> = () => {
             <div key={item.name} className="swiper-slide">
               <div className={styles.item}>
                 <div className={styles.imgContainer}>
-                  <img className={styles.img} src={item.image} alt="фотография" />
+                  <img className={styles.img} src={sliderImage(item.name as TImageNames)} alt={item.name} />
                 </div>
                 <h3>{item.title}</h3>
                 <p>

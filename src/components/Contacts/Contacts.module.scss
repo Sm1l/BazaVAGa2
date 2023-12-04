@@ -51,8 +51,7 @@
 .cont {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  align-items: center;
+  gap: 20px;
 }
 
 .contOne,
@@ -62,7 +61,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 5px;
-  // padding: 20px 0px;
 }
 
 .contOne {
@@ -80,8 +78,6 @@
   }
 }
 .contTwo {
-  padding-top: 10px;
-  margin-left: -88px;
 }
 
 .itemContainer {

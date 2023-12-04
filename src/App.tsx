@@ -12,7 +12,7 @@ const App: React.FC<AppProps> = () => {
   return (
     <div className={styles.app} ref={appRef}>
       <Header appRef={appRef} />
-      <Main />
+      <Main appRef={appRef} />
       <Footer />
     </div>
   );

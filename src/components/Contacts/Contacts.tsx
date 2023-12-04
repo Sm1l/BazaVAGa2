@@ -60,7 +60,6 @@ const Contacts: React.FC<ContactsProps> = () => {
           </div>
         </div>
         <div className={styles.mapContainer}>
-          {/* <YMap lat={55.722473} lng={37.731477} /> */}
           <YMap lat={55.7225} lng={37.73144} />
         </div>
       </div>

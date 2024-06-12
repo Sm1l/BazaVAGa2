@@ -1,12 +1,12 @@
 .header {
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 52px;
   top: 0px;
   right: 0;
   display: grid;
   align-items: center;
-  grid-template-columns: auto 1fr 40px;
+  grid-template-columns: auto 1fr 26px;
   gap: 10px;
   padding: 0 10px;
   color: var(--colorWhite);
@@ -16,13 +16,21 @@
 
 .logoContainer {
   position: relative;
-  width: 180px;
+  width: 120px;
   max-height: 100%;
-  background: url(../../assets/images/home/logoBazaVagaWhite.png) no-repeat center / contain;
 }
 
 .logoTitle {
   color: transparent;
+  width: 0;
+  height: 0;
+}
+
+.logo {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .navigation {
@@ -90,6 +98,7 @@
 @media (min-width: 960px) {
   .header {
     position: absolute;
+    height: 80px;
     top: 40px;
     right: 0;
     grid-template-columns: auto 1fr minmax(200px, 600px);
@@ -97,6 +106,9 @@
     padding: 0;
     padding-left: 40px;
     background: none;
+  }
+  .logoContainer {
+    width: 180px;
   }
   .line {
     &::after {

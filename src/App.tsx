@@ -11,8 +11,8 @@ const App: React.FC<AppProps> = () => {
 
   return (
     <div className={styles.app} ref={appRef}>
-      <Header appRef={appRef} />
-      <Main appRef={appRef} />
+      <Header />
+      <Main />
       <Footer />
     </div>
   );

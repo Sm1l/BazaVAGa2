@@ -5,6 +5,7 @@ import imgAddress from "../../assets/images/contacts/address.svg";
 import imgCall from "../../assets/images/contacts/call.svg";
 import imgTime from "../../assets/images/contacts/time.svg";
 import imgWhatsapp from "../../assets/images/contacts/whatsapp.svg";
+import imgTelegram from "../../assets/images/contacts/telegram.svg";
 
 import { Title } from "../Title";
 import { YMap } from "../YMap";
@@ -22,12 +23,12 @@ const Contacts: React.FC<ContactsProps> = () => {
           <div className={styles.contOne}>
             <div className={styles.itemContainer}>
               <img src={imgAddress} alt="address" className={styles.img} />
-              <p className={styles.imgContainer}>г. Москва, 2-й Грайвороновский пр., 8, стр. 7</p>
+              <p className={styles.imgContainer}>г. Москва, 2-й Грайвороновский пр., 8, стр. 1</p>
             </div>
             <div className={styles.itemContainer}>
               <img src={imgTime} alt="time" className={styles.img} />
               <p className={styles.imgContainerTime}>
-                Понедельник - суббота <br /> с 9:00 до 21:00
+                Понедельник - пятница <br /> с 9:00 до 21:00
               </p>
             </div>
           </div>
@@ -49,7 +50,7 @@ const Contacts: React.FC<ContactsProps> = () => {
               <motion.a
                 initial={{ opacity: 0.5 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1, repeat: Infinity, repeatType: "reverse" }}
+                transition={{ duration: 1, delay: 0.3, repeat: Infinity, repeatType: "reverse" }}
                 href="https://wa.me/+79160773444"
                 className={styles.imgContainerActive}
                 target="_blank"
@@ -57,10 +58,23 @@ const Contacts: React.FC<ContactsProps> = () => {
                 Написать
               </motion.a>
             </div>
+            <div className={styles.itemContainer}>
+              <img src={imgTelegram} alt="telegram" className={styles.img} />
+              <motion.a
+                initial={{ opacity: 0.5 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.6, repeat: Infinity, repeatType: "reverse" }}
+                href="https://t.me/bazaVAGa"
+                className={styles.imgContainerActive}
+                target="_blank"
+              >
+                Телеграм
+              </motion.a>
+            </div>
           </div>
         </div>
         <div className={styles.mapContainer}>
-          <YMap lat={55.7225} lng={37.73144} />
+          <YMap lat={55.721579} lng={37.732179} />
         </div>
       </div>
     </section>

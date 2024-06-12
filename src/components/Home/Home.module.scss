@@ -10,12 +10,6 @@
   background-size: cover;
 }
 
-@media (min-width: 960px) {
-  .home {
-    background-image: url("/src/assets/images/home/home.jpg");
-  }
-}
-
 .homeContainer {
   width: 1440px;
   min-height: 100%;
@@ -43,27 +37,33 @@
 
 .span1 {
   color: var(--colorRed);
-  font-size: 3.8rem;
+  font-size: 3.2rem;
   line-height: 2.2rem;
   font-weight: 700;
   opacity: 0.6;
 }
 
 .span2 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   color: black;
-  line-height: 2.2rem;
+  line-height: 2.4rem;
   text-shadow: 1.41px 1.41px rgba(255, 255, 255, 0.6), 2px 0 rgba(255, 255, 255, 0.6),
     1.41px -1.41px rgba(255, 255, 255, 0.6), 0 -2px rgba(255, 255, 255, 0.6), -1.41px -1.41px rgba(255, 255, 255, 0.6),
     -2px 0 rgba(255, 255, 255, 0.6), -1.41px 1.41px rgba(255, 255, 255, 0.6), 0 2px rgba(255, 255, 255, 0.6);
 }
 
-@media (min-width: 960px) {
+@media (width >= 960px) {
+  .home {
+    background-image: url("/src/assets/images/home/home.jpg");
+  }
   .homeContainer {
     padding: 100px 40px;
     gap: 80px;
   }
   .span1 {
     font-size: 4rem;
+  }
+  .span2 {
+    font-size: 2.8rem;
   }
 }

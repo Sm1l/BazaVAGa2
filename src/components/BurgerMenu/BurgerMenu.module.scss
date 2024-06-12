@@ -1,0 +1,81 @@
+.burgerMenu {
+  position: fixed;
+  top: 52px;
+  left: 0;
+
+  width: 100vw;
+  height: calc(100% - 50px);
+
+  transform: translateX(100%);
+
+  transition: transform 200ms ease-out;
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.background {
+  position: absolute;
+
+  width: 100vw;
+  height: 100vh;
+
+  backdrop-filter: blur(2px);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  padding-top: 80px;
+
+  background-color: rgba(0, 0, 0, 0.9);
+
+  transform: translateX(100%);
+
+  transition: transform 400ms ease-out;
+
+  &.active {
+    transform: translateX(0);
+
+    transition: transform 400ms ease-out;
+  }
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contactsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.navLink {
+  font-size: 1.4rem;
+}

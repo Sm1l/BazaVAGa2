@@ -1,20 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
 
-import { BurgerContainer } from "../BurgerContainer";
+import logo from "../../assets/images/home/logoBazaVagaWhite.png";
+import { BurgerButton } from "../BurgerButton";
+import { BurgerMenu } from "../BurgerMenu";
 import styles from "./Header.module.scss";
 
-interface HeaderProps {
-  appRef: React.RefObject<HTMLDivElement>;
-}
+interface HeaderProps {}
 
-const Header: React.FC<HeaderProps> = ({ appRef }) => {
+const Header: React.FC<HeaderProps> = () => {
+  const [menuIsActive, setMenuIsActive] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
-  const [appComponent, setAppComponent] = useState<Element | null>(appRef.current);
-
-  useEffect(() => {
-    setAppComponent(appRef.current);
-  }, []);
 
   useEffect(() => {
     const handleResizeWindow = () => setWidth(window.innerWidth);
@@ -29,6 +24,7 @@ const Header: React.FC<HeaderProps> = ({ appRef }) => {
     <header className={styles.header}>
       <div className={styles.logoContainer}>
         <h1 className={styles.logoTitle}>BazaVAGa</h1>
+        <img className={styles.logo} src={logo} alt="BazaVAGa" />
       </div>
       <div className={styles.line}></div>
       {width >= 960 ? (
@@ -44,7 +40,10 @@ const Header: React.FC<HeaderProps> = ({ appRef }) => {
           </a>
         </nav>
       ) : (
-        appComponent && createPortal(<BurgerContainer />, appComponent)
+        <>
+          <BurgerButton menuIsActive={menuIsActive} setMenuIsActive={setMenuIsActive} />
+          <BurgerMenu menuIsActive={menuIsActive} setMenuIsActive={setMenuIsActive} />
+        </>
       )}
     </header>
   );

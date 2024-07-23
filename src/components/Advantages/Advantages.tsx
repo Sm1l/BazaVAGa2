@@ -8,7 +8,7 @@ interface AdvantagesProps {}
 
 const Advantages: React.FC<AdvantagesProps> = () => {
   return (
-    <div className={styles.advantages} id="advantages">
+    <section className={styles.advantages} id="advantages">
       <div className={styles.advantagesContainer}>
         <Title text="Преимущества нашей компании" />
         <div className={styles.infoContainer}>
@@ -44,7 +44,7 @@ const Advantages: React.FC<AdvantagesProps> = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

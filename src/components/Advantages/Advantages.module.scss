@@ -44,8 +44,7 @@
 
 .textContainer {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
   gap: 10px;
 }
 
@@ -63,6 +62,15 @@
 .text {
   padding-left: 20px;
   position: relative;
+}
+
+@media (min-width: 640px) {
+  .textContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+  }
 }
 
 @media (min-width: 960px) {

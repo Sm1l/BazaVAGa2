@@ -1,7 +1,8 @@
 import React from "react";
-import { Slider } from "../Slider";
 import { Title } from "../Title";
 import styles from "./Services.module.scss";
+
+import { ServicesSlider } from "../ServicesSlider";
 
 interface ServicesProps {}
 
@@ -13,7 +14,7 @@ const Services: React.FC<ServicesProps> = () => {
           <Title text="Услуги" />
           <p className={styles.text}>Мы предоставляем широкий спектр услуг по приятным ценам:</p>
         </div>
-        <Slider />
+        <ServicesSlider />
       </div>
     </section>
   );

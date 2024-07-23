@@ -29,7 +29,7 @@
     border: none;
     border-radius: 2px;
 
-    background-color: var(--colorRed);
+    background-color: var(--colorWhite);
 
     transition: all 400ms ease-out;
   }
@@ -46,7 +46,7 @@
     border: none;
     border-radius: 2px;
 
-    background-color: var(--colorRed);
+    background-color: var(--colorWhite);
 
     transition: all 400ms ease-out;
   }
@@ -63,7 +63,7 @@
     border: none;
     border-radius: 2px;
 
-    background-color: var(--colorWhite);
+    background-color: var(--colorRed);
 
     transition: all 400ms ease-out;
   }
@@ -89,6 +89,6 @@
   }
 
   & span {
-    transform: translateX(-200px) scale(0);
+    transform: scale(0);
   }
 }

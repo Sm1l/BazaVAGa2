@@ -24,6 +24,23 @@
 .watsapp {
 }
 
+.outsidePhonesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.insidePhonesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.name {
+  color: var(--colorRed);
+}
+
 .imgContainer,
 .imgContainerActive,
 .imgContainerTime {
@@ -84,6 +101,16 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  flex: 1 auto auto;
+}
+
+.imgContainerActive {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  flex-shrink: 0;
+  min-width: 123px;
 }
 
 .mapContainer {

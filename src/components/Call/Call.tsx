@@ -1,7 +1,8 @@
 import React from "react";
 
-import styles from "./Call.module.scss";
+import { MAIN_TEL } from "../../data/constants";
 import { Title } from "../Title";
+import styles from "./Call.module.scss";
 
 interface CallProps {}
 
@@ -15,10 +16,10 @@ const Call: React.FC<CallProps> = () => {
           <br /> Просто позвоните нам!
         </p>
       </div>
-      <a href="tel:+79160773444" className={styles.button}>
+      <a href="tel:+79161514888" className={styles.button}>
         Позвонить!
         <br />
-        +7 (916) 077-34-44
+        {MAIN_TEL}
       </a>
     </section>
   );

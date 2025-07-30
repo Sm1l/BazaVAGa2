@@ -1,5 +1,6 @@
-@import "/public/fonts/font.scss";
-@import "/src/assets/variables.scss";
+// @import "/public/fonts/font.scss";
+@use "/src/assets/fonts/font.scss";
+@use "/src/assets/variables.scss";
 
 html {
   scroll-behavior: smooth;

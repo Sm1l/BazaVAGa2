@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import React from "react";
 
 import imgAddress from "../../assets/images/contacts/address.svg";
-import imgCallW from "../../assets/images/contacts/callW.svg";
+import imgCall from "../../assets/images/contacts/call.svg";
 import imgTelegram from "../../assets/images/contacts/telegram.svg";
 import imgTime from "../../assets/images/contacts/time.svg";
-import imgWhatsappW from "../../assets/images/contacts/whatsappW.svg";
+import imgWhatsapp from "../../assets/images/contacts/whatsapp.svg";
 
 import { ALEX_TEL, MAIN_TEL, PIRAT_TEL, YURACH_TEL } from "../../data/constants";
 import styles from "./ContactsPhones.module.scss";
@@ -39,7 +39,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   href={`tel:${MAIN_TEL}`}
                   className={styles.imgLink}
                 >
-                  <img src={imgCallW} alt="phone" className={styles.img} />
+                  <img src={imgCall} alt="phone" className={styles.img} />
                 </motion.a>
                 <motion.a
                   initial={{ opacity: 0.5 }}
@@ -49,7 +49,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   className={styles.imgLink}
                   target="_blank"
                 >
-                  <img src={imgWhatsappW} alt="whatsapp" className={styles.imgW} />
+                  <img src={imgWhatsapp} alt="whatsapp" className={styles.imgW} />
                 </motion.a>
               </div>
               <p className={styles.name}>рабочий на приемке bazaVAGa</p>
@@ -63,7 +63,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   href={`tel:${YURACH_TEL}`}
                   className={styles.imgLink}
                 >
-                  <img src={imgCallW} alt="phone" className={styles.img} />
+                  <img src={imgCall} alt="phone" className={styles.img} />
                 </motion.a>
                 <motion.a
                   initial={{ opacity: 0.5 }}
@@ -73,7 +73,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   className={styles.imgLink}
                   target="_blank"
                 >
-                  <img src={imgWhatsappW} alt="whatsapp" className={styles.imgW} />
+                  <img src={imgWhatsapp} alt="whatsapp" className={styles.imgW} />
                 </motion.a>
               </div>
               <p className={styles.name}>Юрий Yurach</p>
@@ -88,7 +88,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   href={`tel:${PIRAT_TEL}`}
                   className={styles.imgLink}
                 >
-                  <img src={imgCallW} alt="phone" className={styles.img} />
+                  <img src={imgCall} alt="phone" className={styles.img} />
                 </motion.a>
                 <motion.a
                   initial={{ opacity: 0.5 }}
@@ -98,7 +98,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   className={styles.imgLink}
                   target="_blank"
                 >
-                  <img src={imgWhatsappW} alt="whatsapp" className={styles.imgW} />
+                  <img src={imgWhatsapp} alt="whatsapp" className={styles.imgW} />
                 </motion.a>
               </div>
               <p className={styles.name}>Александр сервис Пират</p>
@@ -113,7 +113,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   href={`tel:${ALEX_TEL}`}
                   className={styles.imgLink}
                 >
-                  <img src={imgCallW} alt="phone" className={styles.img} />
+                  <img src={imgCall} alt="phone" className={styles.img} />
                 </motion.a>
                 <motion.a
                   initial={{ opacity: 0.5 }}
@@ -123,7 +123,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   className={styles.imgLink}
                   target="_blank"
                 >
-                  <img src={imgWhatsappW} alt="whatsapp" className={styles.imgW} />
+                  <img src={imgWhatsapp} alt="whatsapp" className={styles.imgW} />
                 </motion.a>
               </div>
               <p className={styles.name}>Александр офис</p>
@@ -132,17 +132,17 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
         </div>
 
         <div className={styles.itemContainer}>
-          <img src={imgTelegram} alt="telegram" className={styles.img} />
           <motion.a
             initial={{ opacity: 0.5 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.9, repeat: Infinity, repeatType: "reverse" }}
             href="https://t.me/bazaVAGa"
-            className={styles.imgContainerActive}
+            className={styles.imgLink}
             target="_blank"
           >
-            Тelegram
+            <img src={imgTelegram} alt="telegram" className={styles.img} />
           </motion.a>
+          <p className={styles.name}>Тelegram </p>
         </div>
       </div>
     </div>

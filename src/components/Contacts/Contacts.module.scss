@@ -12,9 +12,10 @@
   color: var(--colorWhite);
 
   background-image: var(--gradientDark);
-  background-image: url("/src/assets/images/contacts/tyres.jpg");
-  background-image: url("/src/assets/images/contacts/tyres.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/src/assets/images/contacts/tyresMin.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 
   scroll-margin-top: 50px;

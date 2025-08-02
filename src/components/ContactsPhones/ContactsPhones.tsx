@@ -23,7 +23,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
         <div className={styles.itemContainer}>
           <img src={imgTime} alt="time" className={styles.img} />
           <p className={styles.imgContainerTime}>
-            Понедельник - пятница <br /> с 9:00 до 21:00
+            Понедельник - суббота <br /> с 9:00 до 21:00
           </p>
         </div>
       </div>

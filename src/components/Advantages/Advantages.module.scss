@@ -1,32 +1,41 @@
 .advantages {
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-image: var(--gradientLight);
+  align-items: center;
+
+  width: 100%;
+  padding: 10px;
+
+  background-image: var(--gradientDark);
+
   scroll-margin-top: 50px;
 }
 
 .advantagesContainer {
-  width: 1440px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 10px 20px;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  width: 1440px;
+  padding: 20px 10px;
+
+  border-radius: 20px;
+
+  background-image: var(--gradientLight);
 }
 
 .infoContainer {
   display: grid;
-  grid-template-columns: auto;
   grid-template-rows: auto auto;
+  grid-template-columns: auto;
   gap: 20px;
 }
 
 .company {
-  font-size: 1.2rem;
   font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .list {
@@ -38,8 +47,8 @@
 .companyContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 20px;
+  align-items: flex-start;
 }
 
 .textContainer {
@@ -52,40 +61,52 @@
   position: absolute;
   top: 10px;
   left: 0;
+
   display: inline-block;
+
   width: 10px;
   height: 10px;
-  background-color: var(--colorRed);
+
   border-radius: 50%;
+
+  background-color: var(--colorRed);
 }
 
 .text {
-  padding-left: 20px;
   position: relative;
+
+  padding-left: 20px;
 }
 
 @media (min-width: 640px) {
   .textContainer {
     display: grid;
-    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
     gap: 10px;
   }
 }
 
 @media (min-width: 960px) {
   .advantages {
+    padding: 0;
+
+    background-image: var(--gradientLight);
     scroll-margin-top: 0;
   }
+
   .advantagesContainer {
-    padding: 80px 40px 40px;
     gap: 40px;
+
+    padding: 80px 40px;
+
+    background-image: none;
   }
 
   .infoContainer {
     display: grid;
-    grid-template-columns: auto 1fr;
     grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
     gap: 40px;
   }
 }

@@ -1,49 +1,65 @@
 .contacts {
-  width: 100%;
-  min-height: calc(100dvh - 65px - 80px);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
-  background-image: var(--gradientDark);
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: calc(100dvh - 65px - 80px);
   padding: 20px 10px;
+
   color: var(--colorWhite);
+
+  background-image: var(--gradientDark);
+  background-image: url("/src/assets/images/contacts/tyres.jpg");
+  background-image: url("/src/assets/images/contacts/tyres.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   scroll-margin-top: 50px;
 }
 
 .contactsContainer {
-  width: 100%;
-  height: 100%;
-  max-width: 1440px;
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 20px;
+
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+}
+
+.contactsPhones {
 }
 
 .mapContainer {
   width: 100%;
   min-height: 100%;
   min-height: 50dvh;
-  overflow: hidden;
+
   border: none;
   border-radius: 25px;
+
+  overflow: hidden;
 }
 
 @media (min-width: 960px) {
   .contacts {
-    min-height: calc(100dvh - 65px);
     gap: 40px;
-    padding: 40px;
+
+    min-height: calc(100dvh - 65px);
+    padding: 80px 40px;
     scroll-margin-top: 0;
   }
 
   .contactsContainer {
     display: grid;
-    grid-template-columns: auto 1fr;
     grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
     gap: 20px;
   }
+
   .mapContainer {
     min-height: calc(100dvh - 100%);
   }

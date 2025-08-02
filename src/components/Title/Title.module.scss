@@ -1,20 +1,24 @@
 .title {
-  display: inline-block;
   position: relative;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
-  font-weight: 700;
-  line-height: 110%;
-  text-align: center;
+
+  display: inline-block;
   align-self: center;
 
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 110%;
+  letter-spacing: 2px;
+  text-align: center;
+
   &::after {
-    content: "";
     position: absolute;
-    bottom: -5px;
     left: 0;
+    bottom: -5px;
+    content: "";
+
     width: 100%;
     height: 2px;
+
     background-color: var(--colorRed);
   }
 }

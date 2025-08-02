@@ -1,21 +1,29 @@
 .call {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
-  background-image: var(--gradientLight);
-  padding: 20px 10px;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 10px;
+
+  background-image: var(--gradientDark);
 }
 
 .callContainer {
-  max-width: 1440px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 20px 10px;
+
+  border-radius: 20px;
+
+  background-image: var(--gradientLight);
 }
 
 .text {
@@ -25,18 +33,24 @@
 
 .button {
   position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 180px;
   height: 180px;
-  border-radius: 50%;
   padding: 20px;
-  background-color: var(--colorRed);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+
   color: var(--colorWhite);
   font-weight: 700;
   font-size: 0.8rem;
+  text-align: center;
+
+  border-radius: 50%;
+
+  background-color: var(--colorRed);
+
   animation: pulse 2000ms infinite;
 }
 
@@ -44,19 +58,26 @@
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
 }
 
 @media (min-width: 960px) {
   .call {
     gap: 40px;
-    padding: 40px;
-  }
-}
 
-@media (min-width: 960px) {
+    padding: 0;
+
+    background-image: var(--gradientLight);
+  }
+
+  .callContainer {
+    padding: 80px 40px;
+  }
+
   .button {
     transition: transform 300ms ease-out;
+
     &:hover {
       transform: scale(1.1);
     }
@@ -67,33 +88,43 @@
   0% {
     box-shadow: 0px 0px 20px 0px rgba(242, 46, 46, 0.4);
   }
+
   10% {
     box-shadow: 0px 0px 20px 5px rgba(242, 46, 46, 0.4);
   }
+
   20% {
     box-shadow: 0px 0px 20px 10px rgba(242, 46, 46, 0.4);
   }
+
   30% {
     box-shadow: 0px 0px 20px 15px rgba(242, 46, 46, 0.4);
   }
+
   40% {
     box-shadow: 0px 0px 20px 20px rgba(242, 46, 46, 0.4);
   }
+
   50% {
     box-shadow: 0px 0px 20px 25px rgba(242, 46, 46, 0.4);
   }
+
   60% {
     box-shadow: 0px 0px 20px 20px rgba(242, 46, 46, 0.4);
   }
+
   70% {
     box-shadow: 0px 0px 20px 15px rgba(242, 46, 46, 0.4);
   }
+
   80% {
     box-shadow: 0px 0px 20px 10px rgba(242, 46, 46, 0.4);
   }
+
   90% {
     box-shadow: 0px 0px 20px 5px rgba(242, 46, 46, 0.4);
   }
+
   100% {
     box-shadow: 0px 0px 20px 0px rgba(242, 46, 46, 0.4);
   }

@@ -1,6 +1,7 @@
 // @import "/public/fonts/font.scss";
-@use "/src/assets/fonts/font.scss";
-@use "/src/assets/variables.scss";
+@use "/src/assets/fonts/font";
+@use "/src/assets/variables";
+@use "/src/assets/main";
 
 html {
   scroll-behavior: smooth;
@@ -11,6 +12,7 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
 li {
   list-style: none;
 }

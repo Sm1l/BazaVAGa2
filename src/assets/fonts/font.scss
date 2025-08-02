@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
 
 :root {
-  font-family: "Barlow", sans-serif;
-  line-height: 1.5;
+  color: var(--colorBlack);
   font-weight: 400;
   font-size: 0.9rem;
-  color: var(--colorBlack);
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 @media (min-width: 960px) {
   :root {
-    line-height: 1.5;
     font-size: 1.2rem;
+    line-height: 1.5;
   }
 }

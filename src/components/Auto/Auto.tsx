@@ -13,19 +13,21 @@ interface AutoProps {}
 const Auto: React.FC<AutoProps> = () => {
   return (
     <section className={styles.auto}>
-      <Title text="Обслуживаем автомобили концерна VAG" />
       <div className={styles.autoContainer}>
-        <div className={styles.logoItem}>
-          <img className={styles.img} src={iconVW} alt="vw" />
-        </div>
-        <div className={styles.logoItem}>
-          <img className={styles.img} src={iconSkoda} alt="skoda" />
-        </div>
-        <div className={styles.logoItem}>
-          <img className={styles.img} src={iconSeat} alt="seat" />
-        </div>
-        <div className={styles.logoItem}>
-          <img className={styles.img} src={iconAudi} alt="audi" />
+        <Title text="Обслуживаем автомобили концерна VAG" />
+        <div className={styles.autoLogosContainer}>
+          <div className={styles.logoItem}>
+            <img className={styles.img} src={iconVW} alt="vw" />
+          </div>
+          <div className={styles.logoItem}>
+            <img className={styles.img} src={iconSkoda} alt="skoda" />
+          </div>
+          <div className={styles.logoItem}>
+            <img className={styles.img} src={iconSeat} alt="seat" />
+          </div>
+          <div className={styles.logoItem}>
+            <img className={styles.img} src={iconAudi} alt="audi" />
+          </div>
         </div>
       </div>
     </section>

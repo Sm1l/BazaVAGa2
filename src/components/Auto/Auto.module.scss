@@ -1,28 +1,47 @@
 .auto {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
-  background-image: var(--gradientLight);
-  padding: 20px 10px;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 10px;
+
+  background-image: var(--gradientDark);
 }
 
 .autoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
-  max-width: 1440px;
+  padding: 10px;
+  padding: 20px 10px;
+
+  border-radius: 20px;
+
+  background-image: var(--gradientLight);
+}
+
+.autoLogosContainer {
   display: grid;
-  gap: 10px;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  width: 100%;
+  max-width: 1440px;
 }
 
 .logoItem {
   display: flex;
-  align-items: center;
   justify-content: center;
-  border: 1px solid var(--colorWhite);
+  align-items: center;
+
   border-radius: 20px;
 }
 
@@ -41,12 +60,23 @@
 @media (min-width: 960px) {
   .auto {
     gap: 40px;
-    padding: 40px;
+
+    padding: 0;
+
+    background-image: var(--gradientLight);
   }
 
   .autoContainer {
-    gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    padding: 80px 40px;
+
+    background-image: none;
+  }
+
+  .autoLogosContainer {
     grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    padding: 40px;
   }
 }

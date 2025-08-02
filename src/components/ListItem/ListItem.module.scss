@@ -1,40 +1,53 @@
 .listItem {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+
   font-size: 1.2rem;
 }
 
 .check {
-  display: block;
   position: relative;
+
+  display: block;
+
   width: 20px;
   height: 20px;
+
   border-radius: 50%;
+
   background-color: var(--colorRed);
 
   &::before {
-    content: "";
     position: absolute;
-    width: 3px;
-    height: 8px;
-    border-radius: 1px;
-    transform: rotate(-45deg);
-    background-color: var(--colorWhite);
     top: 8px;
     left: 5px;
+    content: "";
+
+    width: 3px;
+    height: 8px;
+
+    border-radius: 1px;
+
+    background-color: var(--colorWhite);
+
+    transform: rotate(-45deg);
   }
 
   &::after {
-    content: "";
     position: absolute;
-    width: 3px;
-    min-height: 12px;
-    border-radius: 1px;
-    transform: rotate(35deg);
-    background-color: var(--colorWhite);
     top: 4px;
     left: 10px;
+    content: "";
+
+    width: 3px;
+    min-height: 12px;
+
+    border-radius: 1px;
+
+    background-color: var(--colorWhite);
+
+    transform: rotate(35deg);
   }
 }

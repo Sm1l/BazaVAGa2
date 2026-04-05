@@ -15,9 +15,9 @@
   grid-template-rows: auto auto;
 
   max-width: 1440px;
-  padding: 20px 10px;
+  padding: var(--paddingMobile);
 
-  border-radius: 20px;
+  border-radius: var(--borderRadius);
 
   background-image: var(--gradientLight);
 }

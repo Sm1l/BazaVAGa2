@@ -2,6 +2,7 @@ import React from "react";
 
 import { Title } from "../Title";
 import { YMap } from "../YMap";
+import { coords } from "../../data/contacts";
 
 import { ContactsPhones } from "../ContactsPhones";
 import styles from "./Contacts.module.scss";
@@ -15,7 +16,7 @@ const Contacts: React.FC<ContactsProps> = () => {
       <div className={styles.contactsContainer}>
         <ContactsPhones />
         <div className={styles.mapContainer}>
-          <YMap lat={55.721579} lng={37.732179} />
+          <YMap lat={coords.lat} lng={coords.lng} />
         </div>
       </div>
     </section>

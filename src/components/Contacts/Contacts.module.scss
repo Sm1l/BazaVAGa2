@@ -40,7 +40,7 @@
   min-height: 50dvh;
 
   border: none;
-  border-radius: 25px;
+  border-radius: var(--borderRadius);
 
   overflow: hidden;
 }

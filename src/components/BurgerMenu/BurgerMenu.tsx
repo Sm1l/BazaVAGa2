@@ -1,6 +1,6 @@
 import React from "react";
 
-import { MAIN_TEL } from "../../data/constants";
+import { MAIN_TEL } from "../../data/phones";
 import styles from "./BurgerMenu.module.scss";
 
 interface BurgerMenuProps {
@@ -48,10 +48,10 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ menuIsActive, setMenuIsActive }
               <p>{MAIN_TEL}</p>
             </a>
             <a className={styles.link} href="https://wa.me/+79161514888" target="_blank">
-              <p>WhatsApp</p>
+              <p>ВотсАпп</p>
             </a>
             <a className={styles.link} href="https://t.me/bazaVAGa" target="_blank">
-              <p>Telegram</p>
+              <p>Телеграм</p>
             </a>
           </div>
         </div>

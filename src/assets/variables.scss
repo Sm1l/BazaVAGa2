@@ -2,10 +2,15 @@
   --colorWhite: #ffffff;
   --colorLightGrey: #abb6ba;
   --colorGrey: #888888;
+  --colorDirectEnergy: #666666;
   --colorOrange: #f87326;
   --colorRed: #f22e2e;
   --colorDeepGrey: #191919;
   --colorBlack: #070707;
-  --gradientLight: linear-gradient(90deg, var(--colorLightGrey), var(--colorWhite));
+  --gradientLight: linear-gradient(90deg, var(--colorDirectEnergy), var(--colorLightGrey));
   --gradientDark: linear-gradient(90deg, var(--colorBlack), var(--colorDeepGrey));
+
+  --borderRadius: 10px;
+
+  --paddingMobile: 40px 10px;
 }

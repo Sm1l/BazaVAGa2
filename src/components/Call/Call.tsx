@@ -1,6 +1,6 @@
 import React from "react";
 
-import { MAIN_TEL } from "../../data/constants";
+import { MAIN_TEL } from "../../data/phones";
 import { Title } from "../Title";
 import styles from "./Call.module.scss";
 

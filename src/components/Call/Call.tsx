@@ -20,7 +20,7 @@ const Call: React.FC<CallProps> = () => {
         <a href="tel:+79161514888" className={styles.button}>
           Позвонить!
           <br />
-          {MAIN_TEL}
+          {MAIN_TEL.tel}
         </a>
       </div>
     </section>

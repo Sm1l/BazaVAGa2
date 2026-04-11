@@ -7,6 +7,7 @@ import imgTelegram from "../../assets/images/contacts/telegram.svg";
 import imgTime from "../../assets/images/contacts/time.svg";
 import imgWhatsapp from "../../assets/images/contacts/whatsapp.svg";
 import imgMax from "../../assets/images/contacts/max.svg";
+import { formatTel } from "../../helpers/formatTel";
 
 import { address } from "../../data/contacts";
 
@@ -39,7 +40,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   initial={{ opacity: 0.5 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 0.1, repeat: Infinity, repeatType: "reverse" }}
-                  href={`tel:${MAIN_TEL}`}
+                  href={`tel:${MAIN_TEL.tel}`}
                   className={styles.imgLink}
                 >
                   <img src={imgPhone} alt="phone" className={styles.img} />
@@ -48,9 +49,10 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   initial={{ opacity: 0.5 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 0.2, repeat: Infinity, repeatType: "reverse" }}
-                  href={`https://wa.me/${MAIN_TEL}`}
+                  href={`https://wa.me/${formatTel(MAIN_TEL.tel)}`}
                   className={styles.imgLink}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={imgWhatsapp} alt="whatsapp" className={styles.img} />
                 </motion.a>
@@ -58,7 +60,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   initial={{ opacity: 0.5 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 0.3, repeat: Infinity, repeatType: "reverse" }}
-                  href={`https://max.ru/u/`}
+                  href={MAIN_TEL.max}
                   //!Ссылка на MAX
                   className={styles.imgLink}
                   target="_blank"
@@ -74,7 +76,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   initial={{ opacity: 0.5 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 0.4, repeat: Infinity, repeatType: "reverse" }}
-                  href={`tel:${YURACH_TEL}`}
+                  href={`tel:${YURACH_TEL.tel}`}
                   className={styles.imgLink}
                 >
                   <img src={imgPhone} alt="phone" className={styles.img} />
@@ -83,9 +85,10 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   initial={{ opacity: 0.5 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 0.5, repeat: Infinity, repeatType: "reverse" }}
-                  href={`https://wa.me/${YURACH_TEL}`}
+                  href={`https://wa.me/${formatTel(YURACH_TEL.tel)}`}
                   className={styles.imgLink}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={imgWhatsapp} alt="whatsapp" className={styles.img} />
                 </motion.a>
@@ -93,8 +96,7 @@ const ContactsPhones: React.FC<ContactsPhonesProps> = () => {
                   initial={{ opacity: 0.5 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 0.6, repeat: Infinity, repeatType: "reverse" }}
-                  href={`https://max.ru/u/`}
-                  //!Ссылка на MAX
+                  href={YURACH_TEL.max}
                   className={styles.imgLink}
                   target="_blank"
                 >

@@ -2,6 +2,7 @@ import React from "react";
 
 import { MAIN_TEL } from "../../data/phones";
 import styles from "./BurgerMenu.module.scss";
+import { formatTel } from "../../helpers/formatTel";
 
 interface BurgerMenuProps {
   menuIsActive: boolean;
@@ -44,11 +45,14 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ menuIsActive, setMenuIsActive }
           <h3>Контакты</h3>
           <div className={styles.contacts}>
             <p>БазаВАГа</p>
-            <a className={styles.link} href="tel:+79161514888">
-              <p>{MAIN_TEL}</p>
+            <a className={styles.link} href={`tel:${MAIN_TEL.tel}`}>
+              <p>{MAIN_TEL.tel}</p>
             </a>
-            <a className={styles.link} href="https://wa.me/+79161514888" target="_blank">
+            <a className={styles.link} href={`https://wa.me/${formatTel(MAIN_TEL.tel)}`} target="_blank">
               <p>ВотсАпп</p>
+            </a>
+            <a className={styles.link} href={MAIN_TEL.max} target="_blank">
+              <p>Макс</p>
             </a>
             <a className={styles.link} href="https://t.me/bazaVAGa" target="_blank">
               <p>Телеграм</p>

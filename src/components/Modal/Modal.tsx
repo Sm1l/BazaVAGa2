@@ -9,6 +9,9 @@ import { modalVariants } from "./modalVariants.ts";
 import { createPortal } from "react-dom";
 import { address } from "../../data/contacts.ts";
 
+import bv1 from "../../assets/images/modal/BV1.jpg";
+import bv2 from "../../assets/images/modal/BV2.jpg";
+
 interface ModalProps {
   modalIsVisible: boolean;
   setModalIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
@@ -66,8 +69,8 @@ const Modal: React.FC<ModalProps> = ({ modalIsVisible, setModalIsVisible }) => {
         <p className={styles.text}>Уважаемые клиенты!</p>
 
         <div className={styles.imgContainer}>
-          <img className={styles.img} src="/src/assets/images/modal/BV1.jpg" alt="" />
-          <img className={styles.img} src="/src/assets/images/modal/BV2.jpg" alt="" />
+          <img className={styles.img} src={bv1} alt="BazaVAGa1" />
+          <img className={styles.img} src={bv2} alt="BazaVAGa2" />
         </div>
 
         <p>

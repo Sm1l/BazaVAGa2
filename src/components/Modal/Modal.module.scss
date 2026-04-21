@@ -27,12 +27,29 @@
   align-items: center;
 
   max-width: 80%;
-  padding: 30px 20px 20px;
+  padding: 20px;
 
-  border-radius: 10px;
+  border-radius: var(--borderRadius);
 
   background-color: var(--colorLightGrey);
   background-image: var(--gradientLight);
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.img {
+  border-radius: var(--borderRadius);
+
+  width: 100%;
+  max-width: 300px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .text {
@@ -42,8 +59,8 @@
 
 .close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
 
   margin: 0;
   padding: 0;
@@ -76,4 +93,18 @@
 
 .red {
   color: var(--colorRed);
+}
+
+@media (width >= 960px) {
+  .container {
+    padding: 40px;
+  }
+  .img {
+    border-radius: var(--borderRadius);
+
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
 }
